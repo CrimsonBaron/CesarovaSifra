@@ -3,6 +3,7 @@ package com.cesarovasifra.main;
 import java.util.Locale;
 
 public class CipherUtills {
+    // ((x-1) % k + k) % k -> našel jsem si tento vzorec jenž clampne hodnotu od do
     public static String cipher(String input, int key) {
         int[] asc = transformToAsciiArr(input);
 
